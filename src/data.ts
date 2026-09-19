@@ -3,8 +3,8 @@ export const profile = {
   role: "Full-Stack Web Developer",
   location: "South Tangerang, Indonesia",
   email: "anugrahamrizky@gmail.com",
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/",
+  github: "https://github.com/MRizkyAnugraha",
+  linkedin: "https://www.linkedin.com/in/muhammad-rizky-anugraha",
   tagline: "WEB DEV — BI & DATA",
   intro:
     "Building practical web applications with a background in data analytics and business intelligence.",
@@ -20,7 +20,7 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     title: "Front End",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML & CSS"],
+    items: ["React", "TypeScript", "Tailwind CSS", "HTML & CSS"],
   },
   {
     title: "Back End",
@@ -28,54 +28,114 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Database",
-    items: ["PostgreSQL", "MongoDB", "SQL", "Data Modeling", "Supabase"],
+    items: ["PostgreSQL", "SQL", "Data Modeling"],
   },
   {
     title: "DevOps & Tools",
-    items: ["Git", "Docker", "Vercel", "CI/CD", "Power BI"],
+    items: ["Git", "Docker", "Vercel", "CI/CD"],
+  },
+  {
+    title: "Data Visualization & BI",
+    items: ["Power BI", "Metabase"],
   },
 ]
 
-export type Project = {
+export type Portfolio = {
   title: string
   description: string
   tags: string[]
   year: string
+  image?: string
+  link?: string
 }
 
-export const projects: Project[] = [
+export const portfolio: Portfolio[] = [
   {
-    title: "Sales Analytics Dashboard",
+    title: "Warung Wakiki",
     description:
-      "An interactive dashboard turning raw sales data into clear, actionable insights with filters, trends, and KPI tracking built on a real-time data pipeline.",
-    tags: ["React", "TypeScript", "PostgreSQL", "Charts"],
+      "An e-commerce website for a household appliance, household products, and food supplies.",
+    tags: ["HTML", "CSS",  "Javascript"],
     year: "2025",
+    image: "./public/images/warung_wakiki.png",
+    link: "https://mrizkyanugraha.github.io/warungwakiki/",
   },
   {
-    title: "Inventory Management System",
+    title: "Kalkulator Suhu",
     description:
-      "A full-stack application for tracking stock, orders, and suppliers with role-based access and automated low-stock alerts.",
-    tags: ["Next.js", "Node.js", "PostgreSQL"],
+      "A web application for converting celsius to fahrenheit and vice versa.",
+    tags: ["HTML", "CSS",  "Javascript"],
     year: "2025",
+    image: "./public/images/kalkulator_suhu.png",
+    link: "https://revou-fundamental-course.github.io/19-may-25-MRizkyAnugraha/?celcius=32",
   },
-  {
-    title: "Data Reporting Portal",
-    description:
-      "A self-service reporting tool that lets business users build and export custom reports without writing SQL, bridging my BI experience and web development.",
-    tags: ["React", "Python", "REST API"],
-    year: "2024",
-  },
-  {
-    title: "Personal Finance Tracker",
-    description:
-      "A responsive web app for budgeting and expense tracking with category insights, monthly summaries, and a clean, focused UI.",
-    tags: ["React", "TypeScript", "Supabase"],
-    year: "2024",
-  },
+  // {
+  //   title: "Data Reporting Portal",
+  //   description:
+  //     "A self-service reporting tool that lets business users build and export custom reports without writing SQL, bridging my BI experience and web development.",
+  //   tags: ["React", "Python", "REST API"],
+  //   year: "2024",
+  // },
+  // {
+  //   title: "Personal Finance Tracker",
+  //   description:
+  //     "A responsive web app for budgeting and expense tracking with category insights, monthly summaries, and a clean, focused UI.",
+  //   tags: ["React", "TypeScript", "Supabase"],
+  //   year: "2024",
+  // },
 ]
 
+export type Experience = {
+  title: string
+  description: string
+  company: string
+  year: string
+}
+
+export const experience: Experience[] = [
+  {
+    title: "Power BI Engineer",
+    description:
+      "Developed and maintained Power BI dashboards supporting sales performance, incentive tracking, and operational monitoring. Translated business reporting needs into data models and visualization solutions in collaboration with Business Analysts. Validated and transformed data from SQL Server and Microsoft Fabric sources to ensure reporting accuracy and consistency. Worked closely with Data Engineers to align data structure with reporting and analytics requirements",
+    company: "PT. Arshiara Teknologi Indonesia",
+    year: "2025 - Present",
+  },
+  {
+    title: "Junior BI Consultant",
+    description:
+      "Developed Power BI reports supporting operational and commercial monitoring use cases. Supported business users in translating reporting needs into technical reporting solutions. Contributed to automation initiatives using Power Apps and Power Automate. Collaborated with backend teams to ensure data availability and reporting reliability for business users.",
+    company: "PT. Ignite Indonesia",
+    year: "2023 - 2024",
+  },]
+
+  export type Testimonial = {
+  name: string
+  description: string
+  title: string
+  company: string
+  year: string
+}
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "Adam A",
+    description:
+      `​Rizky is a highly dependable, technically brilliant, and supportive data professional. During the Lumina Project for Sinarmas Land, he played a crucial role in onboarding team members and mastering highly complex Power BI and DAX logic. He consistently served as the team's go-to problem solver and collaborative anchor making him highly recommended for any organization.`,
+    title: "Lead Power BI Engineer",
+    company: "Akuntplus",
+    year: "2026",
+  },
+  {
+    name: "Bisyri M",
+    description:
+      `
+I have had the pleasure of working with Rizky for one month, and I can confidently say that he is an exceptional data analyst. Rizky possesses a wide range of skills and expertise in SQL, and he is always seeking to expand his knowledge and stay up-to-date with the latest trends and techniques.`,
+    title: "Odoo Developer",
+    company: "HashMicro",
+    year: "2023",
+  },]
+
 export const stats = [
-  { value: "5+", label: "Years in BI & Data" },
-  { value: "10+", label: "Projects Shipped" },
+  { value: "2+", label: "Years in BI & Data" },
+  { value: "5+", label: "Projects Shipped" },
   { value: "∞", label: "Curiosity to Learn" },
 ]

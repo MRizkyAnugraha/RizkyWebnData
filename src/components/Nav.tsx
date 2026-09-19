@@ -6,6 +6,8 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#work", label: "Work" },
+  { href: "#experience", label: "Experience" },
+  { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ]
 
@@ -28,7 +30,7 @@ export default function Nav() {
     >
       <nav className="container flex h-16 items-center justify-between">
         <a href="#top" className="font-mono text-sm font-bold tracking-tight text-white">
-          {profile.name.split(" ")[0]}
+          {profile.name}
           <span className="text-accent">.</span>
         </a>
 

@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react"
-import { projects } from "../data"
+import { portfolio } from "../data"
 
-export default function Work() {
+export default function Portfolio() {
   return (
     <section id="work" className="border-t border-white/10 py-24 md:py-32">
       <div className="container">
@@ -15,21 +15,23 @@ export default function Work() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          {projects.map((project) => (
+          {portfolio.map((portfolio) => (
+            <a href={portfolio.link} target="_blank" rel="noopener noreferrer">
             <article
-              key={project.title}
+              key={portfolio.title}
               className="group relative flex flex-col justify-between rounded-xl border border-white/10 bg-bg-card p-7 transition-colors hover:border-accent/40"
             >
               <div>
+                <img src={portfolio.image} alt={portfolio.title} className="w-full h-auto" />
                 <div className="mb-4 flex items-start justify-between gap-4">
-                  <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-                  <span className="shrink-0 font-mono text-xs text-white/40">{project.year}</span>
+                  <h3 className="text-xl font-semibold text-white">{portfolio.title}</h3>
+                  <span className="shrink-0 font-mono text-xs text-white/40">{portfolio.year}</span>
                 </div>
-                <p className="text-sm leading-relaxed text-white/60">{project.description}</p>
+                <p className="text-sm leading-relaxed text-white/60">{portfolio.description}</p>
               </div>
 
               <div className="mt-6 flex flex-wrap items-center gap-2">
-                {project.tags.map((tag) => (
+                {portfolio.tags.map((tag) => (
                   <span
                     key={tag}
                     className="rounded-full border border-white/10 bg-accent-soft px-3 py-1 font-mono text-xs text-accent"
@@ -44,8 +46,10 @@ export default function Work() {
                 className="absolute right-6 top-6 text-white/0 transition-colors group-hover:text-accent"
               />
             </article>
+            </a>
           ))}
         </div>
+        
       </div>
     </section>
   )

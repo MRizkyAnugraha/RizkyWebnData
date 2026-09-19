@@ -20,6 +20,8 @@ export default function Hero() {
           {profile.role}
         </p>
 
+        <img src="./public/favicon2.svg" alt="Profile" className="mt-8 grid h-40 w-40 object-cover md:h-48 md:w-48 sm:h-56 sm:w-56" /> 
+
         <h1 className="max-w-4xl text-5xl font-extrabold leading-[0.95] tracking-tighter text-balance sm:text-7xl md:text-8xl">
           WEB DEV
           <span className="text-white/30"> | </span>
