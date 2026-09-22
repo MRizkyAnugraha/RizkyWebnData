@@ -22,9 +22,10 @@ export default function Portfolio() {
               className="group relative flex flex-col justify-between rounded-xl border border-white/10 bg-bg-card p-7 transition-colors hover:border-accent/40"
             >
               <div>
-                <img src={portfolio.image} alt={portfolio.title} className="w-full h-auto" />
+                <img src={portfolio.image} alt={portfolio.title} className="w-full h-50 mb-5" />
                 <div className="mb-4 flex items-start justify-between gap-4">
                   <h3 className="text-xl font-semibold text-white">{portfolio.title}</h3>
+                  <h4 className="text-md font-semibold text-accent">{portfolio.subtitle}</h4>
                   <span className="shrink-0 font-mono text-xs text-white/40">{portfolio.year}</span>
                 </div>
                 <p className="text-sm leading-relaxed text-white/60">{portfolio.description}</p>

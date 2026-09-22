@@ -42,6 +42,7 @@ export const skillGroups: SkillGroup[] = [
 
 export type Portfolio = {
   title: string
+  subtitle?: string
   description: string
   tags: string[]
   year: string
@@ -52,8 +53,9 @@ export type Portfolio = {
 export const portfolio: Portfolio[] = [
   {
     title: "Warung Wakiki",
+    subtitle: "E-commerce Front-End Prototype",
     description:
-      "An e-commerce website for a household appliance, household products, and food supplies.",
+      'Built a responsive e-commerce front-end prototype for a household and food-supply store using HTML, CSS, and JavaScript. The project focused on creating a practical storefront where users could browse product categories, explore promotional content, and access store information. I implemented responsive layouts, navigation, product sections, image slideshow interactions, and other UI elements while practicing the separation of structure, styling, and behavior. The result is a functional front-end prototype, while identifying backend, database, authentication, cart, and order management as the next steps toward a full e-commerce application.',
     tags: ["HTML", "CSS",  "Javascript"],
     year: "2025",
     image: "./public/images/warung_wakiki.png",
@@ -61,8 +63,9 @@ export const portfolio: Portfolio[] = [
   },
   {
     title: "Kalkulator Suhu",
+    subtitle: "Celsius & Fahrenheit Conversion Web Application",
     description:
-      "A web application for converting celsius to fahrenheit and vice versa.",
+      'Built an interactive temperature conversion application using HTML, CSS, and JavaScript to convert between Celsius and Fahrenheit. The project focused on handling user input and presenting conversion results clearly, with features including reverse conversion, input validation, calculation explanations, and dynamic warning messages. Through the project, I practiced DOM manipulation, event handling, conditional logic, functions, and dynamic UI updates, resulting in a functional beginner-level web application.',
     tags: ["HTML", "CSS",  "Javascript"],
     year: "2025",
     image: "./public/images/kalkulator_suhu.png",

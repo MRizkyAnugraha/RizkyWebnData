@@ -48,15 +48,15 @@ export default function Experience() {
         >
 
           {/* Year */}
-          <div className="justify-self-end">
-            <span className="bg-zinc-600 px-3 py-1">
+          <div className="justify-self-end mt-3">
+            <span className="px-3 py-1 h-auto w-auto flex items-left justify-center">
               {experience.year}
             </span>
           </div>
 
           {/* Dot */}
-          <div className="flex justify-center">
-            <div className="h-6 w-6 rounded-full bg-amber-300 shadow-[0_0_15px_rgba(251,191,36,0.7)]" />
+          <div className="flex justify-center items-top mt-5">
+            <div className="h-6 w-6 rounded-full bg-accent" />
           </div>
 
           {/* Content */}
@@ -65,7 +65,7 @@ export default function Experience() {
               {experience.title}
             </h3>
 
-            <p className="text-xl">
+            <p className="text-xl text-accent">
               {experience.company}
             </p>
 
