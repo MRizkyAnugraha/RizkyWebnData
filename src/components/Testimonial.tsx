@@ -21,12 +21,14 @@ export default function Testimonial() {
             >
               <div>
                 <div className="mb-4 flex items-start justify-between gap-4">
-                  <h3 className="text-xl font-bold text-white">{testimonial.name}</h3>
-                  <h4 className="text-m font-semibold text-accent">{testimonial.title}</h4>
-                  <h5 className="text-s font-semibold text-accent">{testimonial.company}</h5>
-                  <span className="shrink-0 font-mono text-xs text-white/40">{testimonial.year}</span>
+                  <div className="mb-4 items-start justify-between gap-4">
+                    <h3 className="text-xl font-bold text-white">{testimonial.name}</h3>
+                    <h4 className="text-m font-semibold text-accent">{testimonial.title}</h4>
+                    <h5 className="text-s font-semibold text-accent">{testimonial.company}</h5>
+                  </div>
+                  <span className="shrink-0 font-mono text-md text-white/40">{testimonial.year}</span>
                 </div>
-                <p className="text-sm leading-relaxed text-white/60">{testimonial.description}</p>
+                <p className="text-sm leading-relaxed text-white/60 text-justify">{testimonial.description}</p>
               </div>
 
             </article>

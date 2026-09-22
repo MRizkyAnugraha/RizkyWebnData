@@ -1,4 +1,3 @@
-import { ArrowUpRight } from "lucide-react"
 import { portfolio } from "../data"
 
 export default function Portfolio() {
@@ -22,13 +21,13 @@ export default function Portfolio() {
               className="group relative flex flex-col justify-between rounded-xl border border-white/10 bg-bg-card p-7 transition-colors hover:border-accent/40"
             >
               <div>
-                <img src={portfolio.image} alt={portfolio.title} className="w-full h-50 mb-5" />
-                <div className="mb-4 flex items-start justify-between gap-4">
+                <img src={portfolio.image} alt={portfolio.title} className="w-auto min-h-[50vw] md:max-h-[25vw] md:min-h-[25vw] ml-auto mr-auto mb-5" />
+                <div className="mb-4 items-start justify-between gap-4">
                   <h3 className="text-xl font-semibold text-white">{portfolio.title}</h3>
                   <h4 className="text-md font-semibold text-accent">{portfolio.subtitle}</h4>
                   <span className="shrink-0 font-mono text-xs text-white/40">{portfolio.year}</span>
                 </div>
-                <p className="text-sm leading-relaxed text-white/60">{portfolio.description}</p>
+                <p className="text-sm leading-relaxed text-white/60 text-justify">{portfolio.description}</p>
               </div>
 
               <div className="mt-6 flex flex-wrap items-center gap-2">
@@ -42,10 +41,6 @@ export default function Portfolio() {
                 ))}
               </div>
 
-              <ArrowUpRight
-                size={20}
-                className="absolute right-6 top-6 text-white/0 transition-colors group-hover:text-accent"
-              />
             </article>
             </a>
           ))}

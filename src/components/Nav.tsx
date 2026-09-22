@@ -34,7 +34,7 @@ export default function Nav() {
           <span className="text-accent">.</span>
         </a>
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a
@@ -49,13 +49,13 @@ export default function Nav() {
 
         <a
           href="#contact"
-          className="hidden rounded-full bg-accent px-4 py-2 text-sm font-semibold text-bg transition-colors hover:bg-accent-hover md:inline-block"
+          className="hidden rounded-full bg-accent px-4 py-2 text-sm font-semibold text-bg transition-colors hover:bg-accent-hover lg:inline-block"
         >
           Get in touch
         </a>
 
         <button
-          className="text-white md:hidden"
+          className="text-white lg:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
         >
@@ -64,7 +64,7 @@ export default function Nav() {
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-bg/95 backdrop-blur-md md:hidden">
+        <div className="border-t border-white/10 bg-bg/95 backdrop-blur-md lg:hidden">
           <ul className="container flex flex-col gap-1 py-4">
             {links.map((l) => (
               <li key={l.href}>

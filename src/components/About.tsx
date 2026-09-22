@@ -2,7 +2,7 @@ import { profile, stats } from "../data"
 
 export default function About() {
   return (
-    <section id="about" className="border-t border-white/10 py-24 md:py-32">
+    <section id="about" className="border-t border-white/10 py-24 md:py-25">
       <div className="container">
         <div className="grid gap-12 md:grid-cols-[1fr_1.4fr] md:gap-16">
           <div>
@@ -15,7 +15,7 @@ export default function About() {
           </div>
 
           <div>
-            <p className="text-lg leading-relaxed text-white/70 text-balance">
+            <p className="text-sm md:text-lg leading-relaxed text-white/70 text-balance text-justify">
               {profile.about}
             </p>
 

@@ -9,74 +9,57 @@ export default function Experience() {
             Work Experience
           </p>
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-            Working Experience I&apos;ve done.
+            Work Experience I&apos;ve done.
           </h2>
         </div>
 
-        {/* <div className="grid gap-6 md:grid-cols-2">
-          {experience.map((experience) => (
-            <article
-              key={experience.title}
-              className="group relative flex flex-col justify-between rounded-xl border border-white/10 bg-bg-card p-7 transition-colors hover:border-accent/40"
-            >
-              <div>
-                <div className="mb-4 flex items-start justify-between gap-4">
-                  <h3 className="text-xl font-semibold text-white">{experience.title}</h3>
-                  <span className="shrink-0 font-mono text-xs text-white/40">{experience.year}</span>
-                </div>
-                <p className="text-sm leading-relaxed text-white/60">{experience.description}</p>
-              </div>
-
-              <div className="mt-6 flex flex-wrap items-center gap-2">
-                  <span
-                    key={experience.year}
-                    className="rounded-full border border-white/10 bg-accent-soft px-3 py-1 font-mono text-xs text-accent"
-                  >
-                    {experience.year}
-                  </span>
-              </div>
-
-            </article>
-          ))}
-        </div> */}
-
         <div>
-      {experience.map((experience, index) => (
-        <div
-          key={index}
-          className="grid grid-cols-[70px_32px_1fr] gap-x-4 md:grid-cols-[100px_40px_1fr] md:gap-x-6"
-        >
+  {experience.map((experience, index) => (
+    <div
+      key={index}
+      className="
+        grid
+        grid-cols-[45px_24px_1fr]
+        gap-x-2
 
-          {/* Year */}
-          <div className="justify-self-end mt-3">
-            <span className="px-3 py-1 h-auto w-auto flex items-left justify-center">
-              {experience.year}
-            </span>
-          </div>
+        sm:grid-cols-[60px_28px_1fr]
+        sm:gap-x-3
 
-          {/* Dot */}
-          <div className="flex justify-center items-top mt-5">
-            <div className="h-6 w-6 rounded-full bg-accent" />
-          </div>
+        md:grid-cols-[100px_40px_1fr]
+        md:gap-x-6
+      "
+    >
 
-          {/* Content */}
-          <div className="pb-12">
-            <h3 className="text-2xl font-semibold">
-              {experience.title}
-            </h3>
+      {/* Year */}
+      <div className="mt-1 justify-self-end">
+        <span className="text-sm sm:text-base md:text-xl">
+          {experience.year}
+        </span>
+      </div>
 
-            <p className="text-xl text-accent">
-              {experience.company}
-            </p>
+      {/* Dot */}
+      <div className="mt-2 flex justify-center md:mt-5">
+        <div className="h-4 w-4 rounded-full bg-accent sm:h-5 sm:w-5 md:h-6 md:w-6" />
+      </div>
 
-            <p className="mt-4 leading-relaxed text-zinc-300">
-              {experience.description}
-            </p>
-          </div>
+      {/* Content */}
+      <div className="min-w-0 pb-10 md:pb-12">
+        <h3 className="text-lg font-semibold sm:text-xl md:text-2xl">
+          {experience.title}
+        </h3>
 
-        </div>
-      ))}
+        <p className="text-base text-accent sm:text-lg md:text-xl">
+          {experience.company}
+        </p>
+
+        <p className="mt-3 text-sm leading-relaxed text-zinc-300 sm:text-base md:mt-4 md:text-justify">
+          {experience.description}
+        </p>
+      </div>
+
     </div>
+  ))}
+</div>
 
       </div>
     </section>
