@@ -29,7 +29,7 @@ export default function Hero() {
             <span className="text-accent">BI &amp; DATA</span>
           </h1>
 
-          <img src="/RLogo.png" alt="Profile" className="mt-8 ml-auto mr-auto w-[30vw] md:w-[20vw] lg:w-[40vh]" /> 
+          <img src="/RLogo.webp" alt="Profile" className="mt-8 ml-auto mr-auto w-[30vw] md:w-[20vw] lg:w-[40vh]" /> 
         </div>
 
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/60 text-balance">
