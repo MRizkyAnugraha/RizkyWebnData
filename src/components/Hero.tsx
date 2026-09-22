@@ -20,13 +20,17 @@ export default function Hero() {
           {profile.role}
         </p>
 
-        <img src="./public/favicon2.svg" alt="Profile" className="mt-8 grid h-40 w-40 object-cover md:h-48 md:w-48 sm:h-56 sm:w-56" /> 
+        <div className="flex flex-col items-start gap-8 md:flex-row md:items-center md:gap-10">
 
-        <h1 className="max-w-4xl text-5xl font-extrabold leading-[0.95] tracking-tighter text-balance sm:text-7xl md:text-8xl">
-          WEB DEV
-          <span className="text-white/30"> | </span>
-          <span className="text-accent">BI &amp; DATA</span>
-        </h1>
+          <h1 className="mt-8 max-w-4xl text-5xl font-extrabold leading-[0.95] tracking-tighter text-balance sm:text-7xl md:text-8xl">
+            WEB DEV
+            <span className="h-auto text-white/30"> | </span>
+            <br></br>
+            <span className="text-accent">BI &amp; DATA</span>
+          </h1>
+
+          <img src=".../Rlogo.png" alt="Profile" className="mt-8 ml-15 w-[40vh]" /> 
+        </div>
 
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/60 text-balance">
           {profile.intro}

@@ -9,7 +9,7 @@ export default function Skills() {
             Skills
           </p>
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-            The tools I build with.
+            The tools and skills I build with.
           </h2>
         </div>
 

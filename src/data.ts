@@ -58,7 +58,7 @@ export const portfolio: Portfolio[] = [
       'Built a responsive e-commerce front-end prototype for a household and food-supply store using HTML, CSS, and JavaScript. The project focused on creating a practical storefront where users could browse product categories, explore promotional content, and access store information. I implemented responsive layouts, navigation, product sections, image slideshow interactions, and other UI elements while practicing the separation of structure, styling, and behavior. The result is a functional front-end prototype, while identifying backend, database, authentication, cart, and order management as the next steps toward a full e-commerce application.',
     tags: ["HTML", "CSS",  "Javascript"],
     year: "2025",
-    image: "./public/images/warung_wakiki.png",
+    image: "/warung_wakiki.png",
     link: "https://mrizkyanugraha.github.io/warungwakiki/",
   },
   {
@@ -68,7 +68,7 @@ export const portfolio: Portfolio[] = [
       'Built an interactive temperature conversion application using HTML, CSS, and JavaScript to convert between Celsius and Fahrenheit. The project focused on handling user input and presenting conversion results clearly, with features including reverse conversion, input validation, calculation explanations, and dynamic warning messages. Through the project, I practiced DOM manipulation, event handling, conditional logic, functions, and dynamic UI updates, resulting in a functional beginner-level web application.',
     tags: ["HTML", "CSS",  "Javascript"],
     year: "2025",
-    image: "./public/images/kalkulator_suhu.png",
+    image: "/kalkulator_suhu.png",
     link: "https://revou-fundamental-course.github.io/19-may-25-MRizkyAnugraha/?celcius=32",
   },
   // {
